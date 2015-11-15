@@ -10,6 +10,13 @@ namespace BedRockBank
     {
         static void Main(string[] args)
         {
+            //create an instance for an account == object
+            var account = new Account();
+            account.AccountNumber = 123;
+            account.Name = "aavel Checking";
+            account.Deposit(500);
+            Console.WriteLine(account.Balance);
+
         }
     }
 }

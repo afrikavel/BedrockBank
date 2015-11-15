@@ -22,6 +22,23 @@ namespace BedRockBank
         /// </summary>
         public decimal Balance { get; set; }
         #endregion
+        #region Method
+        /// <summary>
+        /// Money deposited in the account
+        /// </summary>
+        /// <param name="amount">Money depositted</param>
+        /// <returns>New balance</returns>
+        public decimal Deposit(decimal amount)
+        {
+           // Balance = Balance + amount;
+            Balance += amount;
+            return Balance;
+        }
+        public decimal Withdraw (decimal amount)
+        { Balance -= amount;
+        return Balance;
+        }
+        #endregion
     }
     
 
